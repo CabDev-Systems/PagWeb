@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e5edf1;
+    background-color: #f9f7f2;
     color: #222;
     line-height: 1.6;
 }
@@ -218,6 +218,30 @@ section {
     height: 100%;
     object-fit: cover;         /* recorta la imagen sin deformarla */
     display: block;
+}
+
+/*==========================
+    EJES Y RUEDAS
+ ==========================   
+*/
+/* Estilo específico para resaltar los productos en ejesRuedas.html */
+.tarjeta-detalle {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background:none;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* En móviles, que se apilen uno sobre otro */
+@media (max-width: 768px) {
+    .tarjeta-detalle {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 

@@ -3,33 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <meta name="description" content="Aprende qué es el surfskate y encuentra las mejores tablas y ejes para simular el surf en el asfalto.">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>SurfSkate - Make your own wave</title>
 </head>
 <body>
 
-    <header>
-        
-        <nav>
-            <h1>Una página de SurfSkate </h1>
-        <ul>
-            <li><a href="">Tablas</a></li>
-            <li><a href="">Ejes y Rueda</a></li>
-            <li><a href="">Contacto</a></li>
-           
-        </ul>
-        </nav>
+    <header class="encabezado-principal">
+        <div class="contenedor-encabezado">
+            <nav aria-label="Navegación principal" class="navegacion">
+                <ul class="lista-navegacion">
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="ejesRuedas.html">Ejes y Ruedas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-<main>
-    <section>
-        <h2>¿Qué es el Surf Skate </h2>
-        <article>
-            <p>El surfskate es un tipo de monopatín diseñado para simular los movimientos y sensaciones del surf en el asfalto. Su característica principal es un eje delantero articulado especial, que permite giros mucho más cerrados y fluidos (carving) que un skate tradicional, 
-                permitiendo generar velocidad (bombeo o pump) sin necesidad de impulsarse con el pie</p>
-                <img src="/img/surfingTheWall.webp" alt="theWall">
-        </article>
-    </section>
 
- </main>   
-    
+    <main id="contenido-principal">
+
+        <section class="seccion-hero" aria-labelledby="titulo-hero">
+            <div class="contenido-hero">
+                <h1 id="titulo-hero">Surfskate</h1>
+                <p class="frase-hero">Make your own wave</p>
+                <div class="acciones-hero">
+                    <a href="#que-es" class="boton">Aprender más</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="que-es" class="seccion-info">
+            <div class="que-es-h2">
+                <h2>¿Qué es el Surf Skate?</h2>
+
+                <article class="bloque-que-es">
+                    <div class="texto-que-es">
+                        <p>
+                            El <strong>surfskate</strong> es un tipo de monopatín diseñado para simular los movimientos del surf en el asfalto. Gracias a su eje delantero especial, permite bombear y realizar giros cerrados sin necesidad de poner el pie en el suelo.
+                        </p>
+                        <p>
+                            Es la herramienta perfecta para mejorar tu técnica de surf fuera del agua o simplemente para disfrutar de una sensación de fluidez única en la ciudad.
+                        </p>
+                    </div>
+
+                    <div class="visual-que-es">
+                        <figure>
+                            <img src="/img/surfingTheWall.webp" alt="Skater pared" class="imagen-que-es" loading="lazy">
+                            <figcaption>Sintiendo el "flow" sobre el asfalto.</figcaption>
+                        </figure>
+
+                        <div class="grupo-botones">
+                            <a href="tablas.html" class="boton-secundario">Explorar Tablas</a>
+                            <a href="ejesRuedas.html" class="boton-secundario">Ver Componentes</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-principal">
+        <div class="contenido-pie">
+            <p>&copy; 2026 SurfSkate by Carlos</p>
+        </div>
+    </footer>
+
 </body>
 </html>

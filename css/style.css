@@ -32,12 +32,18 @@ section {
 /* ===========================
    NAVBAR
 =========================== */
+
+
+
 .navegacion {
     background-color: rgb(86, 159, 242);
+
+   background-repeat: no-repeat;
     text-align: right;
     padding: 15px 30px; 
     margin-bottom: 0px;
     height: auto;
+    
 }
 
 .lista-navegacion {
@@ -177,6 +183,43 @@ section {
 .boton-secundario:hover {
     background-color: #e56f00;
 }
+
+
+/*Tarjetas*/
+
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.tarjeta {
+    width: 250px;              /* tamaño de tarjeta */
+    height: 250px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          /* evita que la imagen se salga */
+    transition: transform .3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* recorta la imagen sin deformarla */
+    display: block;
+}
+
 
 /* ===========================
    RESPONSIVE

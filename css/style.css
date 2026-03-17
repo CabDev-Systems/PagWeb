@@ -184,9 +184,9 @@ section {
     background-color: #e56f00;
 }
 
-
-/*Tarjetas tablas*/
-
+/* ===========================
+Tarjetas tablas
+=========================== */
 
 .galeria {
     display: flex;
@@ -253,8 +253,10 @@ Contacto
     align-items: center;
     gap: 20px;
 }
-
-/* Igualar tamaño de la imagen al iframe */
+/*==========================
+ Igualar tamaño de la imagen al iframe 
+  ==========================   
+*/
 #ultimaFoto img {
     width: 600px;
     height: 450px;
@@ -274,22 +276,7 @@ figcaption p{text-align: center;
         }
 figcaption span{color: red;}        
 
-@media (max-width: 768px) {
 
-    .contacto {
-        flex-direction: column;
-    }
-
-    iframe {
-        width: 100%;
-        height: 300px;
-    }
-
-    #ultimaFoto img {
-        width: 100%;
-        height: 300px;
-    }
-}
 
 
 /* ===========================
@@ -310,6 +297,21 @@ figcaption span{color: red;}
         font-size: 16px;
         padding: 6px 0;
         display: inline-block;
+    }
+
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #ultimaFoto img {
+        width: 100%;
+        height: 300px;
     }
 }
 
